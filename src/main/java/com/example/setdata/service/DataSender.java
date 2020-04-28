@@ -23,6 +23,9 @@ public class DataSender {
         Map<String,ISendingType> typesMap = context.getBeansOfType(ISendingType.class);
         typesMap.forEach((name, bean) -> mailing.put(bean.getNumber(),bean));
     }
+ //   что происходит: при инициализации спринг добавляет в контекст все компоненты
+ //   (помеченные component or service)дальше мы берем контекст и вытаскиваем
+ //   из него все бины типа ISendingTypeи добавляем в мапу
 
     public String sendData(DataInfo dataInfo){
         ISendingType iSendingType = mailing.get(dataInfo.getSendingType());

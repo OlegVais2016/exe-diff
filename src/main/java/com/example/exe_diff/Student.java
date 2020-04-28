@@ -3,13 +3,9 @@ package com.example.exe_diff;
 public class Student {
      private int id;
 
-
-
-
-    public Student(int id) {
+   public Student(int id) {
         this.id = id;
     }
-
     @Override
     public int hashCode() {
         final int prime = 31;
