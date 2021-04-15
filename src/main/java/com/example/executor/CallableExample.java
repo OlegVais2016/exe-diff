@@ -15,13 +15,10 @@ public class CallableExample {
     public CallableExample()
     {
         // Определяем пул из трех потоков
-        ExecutorService executor;
-        executor = Executors.newFixedThreadPool(3);
+        ExecutorService executor = Executors.newFixedThreadPool(3);
 
         // Список ассоциированных с Callable задач Future
-        List<Future<String>>  futures;
-
-        futures = new ArrayList<Future<String>>();
+        List<Future<String>>  futures = new ArrayList<Future<String>>();
 
         // Создание экземпляра Callable класса
         Callable<String> callable = new CallableClass();
@@ -31,8 +28,7 @@ public class CallableExample {
              * Стартуем возвращаюший результат исполнения
              * в виде объекта Future поток
              */
-            Future<String> future;
-            future = executor.submit(callable);
+            Future<String> future = executor.submit(callable);
             /*
              * Добавляем объект Future в список для
              * отображения результат выполнения (получение
@@ -40,8 +36,7 @@ public class CallableExample {
              */
             futures.add(future);
         }
-        SimpleDateFormat sdf;
-        sdf = new SimpleDateFormat("HH:mm:ss  ");
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss  ");
         for (Future<String> future : futures){
             try {
                 // Выводим в консоль полученное значение
@@ -67,8 +62,8 @@ public class CallableExample {
         }
     }
     //-----------------------------------------------------
-    public static void main(String args[])
-    {
+    public static void main(String[] args){
+
         new CallableExample();
     }
 }
