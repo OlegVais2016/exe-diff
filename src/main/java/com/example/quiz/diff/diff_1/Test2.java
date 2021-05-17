@@ -9,7 +9,8 @@ public class Test2 {
         map.put(1,"Pol");
         map.put(2,"Lora");
         map.put(null,"null");
-
+        map.put(null,"lop");
+        map.put(2,"Dora");
         System.out.println(map);
         System.out.println(map.size());
     }
