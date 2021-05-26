@@ -1,4 +1,4 @@
-package com.example.exe_diff;
+package com.example.join;
 
 public class Worker2 implements Runnable {
 
@@ -7,6 +7,8 @@ public class Worker2 implements Runnable {
     public Worker2(Thread parent) {
         this.parent = parent;
     }
+
+
 
     @Override
     public void run() {

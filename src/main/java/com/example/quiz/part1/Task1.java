@@ -6,6 +6,7 @@ import java.util.Set;
 public class Task1 {
     public static void main(String[] args) {
         Set s = new LinkedHashSet();
+
         s.add("1");
         s.add(1);
         s.add(2);

@@ -1,4 +1,7 @@
-package com.example.exe_diff;
+package com.example.join;
+
+import com.example.join.Worker1;
+import com.example.join.Worker2;
 
 import static com.example.exe_diff.ReverseStringRecursion.reverseStringWithRecursion;
 
@@ -10,7 +13,7 @@ public class Main {
 
         t1.start();
         t2.start();
-        System.out.println(reverseStringWithRecursion("hello"));
+
     }
 
 
