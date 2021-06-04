@@ -1,4 +1,4 @@
-package com.example.exe_5;
+package com.example.balance;
 
 public class BalancedParan {
     static class stack {

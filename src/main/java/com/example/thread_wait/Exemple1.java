@@ -1,4 +1,4 @@
-package com.example.exe_3;
+package com.example.thread_wait;
 
 
 

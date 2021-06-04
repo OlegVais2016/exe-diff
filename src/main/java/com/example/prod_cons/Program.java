@@ -1,4 +1,4 @@
-package com.example.exe_4;
+package com.example.prod_cons;
 
 public class Program {
 

@@ -1,4 +1,4 @@
-package com.example.exe_1.singleton;
+package com.example.singleton.singleton;
 
 import org.springframework.stereotype.Service;
 

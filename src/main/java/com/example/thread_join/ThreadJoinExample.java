@@ -1,4 +1,4 @@
-package com.example.exe_2;
+package com.example.thread_join;
 
 public class ThreadJoinExample {
     public static void main(String[] args) {

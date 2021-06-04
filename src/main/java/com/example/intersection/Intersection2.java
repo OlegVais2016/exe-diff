@@ -1,4 +1,4 @@
-package com.example.exe_spark;
+package com.example.intersection;
 
 public class Intersection2 {
     public static void main(String[] args) {

@@ -2,8 +2,9 @@ package com.example.nulls;
 
 public class MyExplonation {
 
-    static Integer number = null;
-
+    static Integer number = 6;
+    static Integer s = Integer.parseInt("4");
+    static String ss = s.toString();
     public static int changeOne(Integer number) {
         return number * 2;
     }
@@ -14,5 +15,7 @@ public class MyExplonation {
 
         System.out.println(changeOne(number));
         System.out.println(changeTwo(number));
+        System.out.println(s);
+        System.out.println(ss);
     }
 }
